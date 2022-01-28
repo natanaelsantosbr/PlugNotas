@@ -15,13 +15,8 @@ namespace PlugNotas.ConsoleApplications
         static async Task Main(string[] args)
         {
             var hubCertificado = RestService.For<ICertificados>("https://api.sandbox.plugnotas.com.br");
-            var resultado = await hubCertificado.BuscarAsync("2da392a6-79d2-4304-a8b7-959572c7e44d");
+            var resultado = await hubCertificado.BuscarTodosAsync("2da392a6-79d2-4304-a8b7-959572c7e44d");
 
-
-            if (resultado != null)
-            {
-
-            }
 
         }
     }
